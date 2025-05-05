@@ -4,64 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Email Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: sans-serif;
-      padding: 1rem;
-      background: #f5f5f5;
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #444;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px;
+      color: #fff;
+      height: 100%;
+      overflow: hidden;
     }
 
     form {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      max-width: 400px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 10px;
+      height: 100%;
+      box-sizing: border-box;
     }
 
     label {
-      display: block;
-      margin: 0.5rem 0 0.2rem;
+      font-size: 7px;
     }
 
     input, textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      background: #222;
+      color: rgb(255, 0, 212);
+      border: 1px solid rgb(255, 0, 212);
+      padding: 4px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      resize: none;
     }
 
     button {
-      background: #007BFF;
-      color: white;
+      background: rgb(255, 0, 212);
+      color: #000;
       border: none;
-      padding: 0.7rem 1.2rem;
-      border-radius: 4px;
+      padding: 4px;
+      font-size: 6px;
+      font-family: 'Press Start 2P', monospace;
       cursor: pointer;
     }
 
     button:hover {
-      background: #0056b3;
+      background: rgb(204, 0, 102);
     }
 
-    .success {
-      color: green;
+    h2 {
+      font-size: 7px;
+      margin: 0 0 5px 0;
       text-align: center;
     }
   </style>
 </head>
 <body>
   <form action="https://formspree.io/f/mnnddzko" method="POST">
-    <h2>Contact Me</h2>
-    <label for="email">Your Email</label>
+    <h2>CONTACT</h2>
+    <label for="email">EMAIL</label>
     <input type="email" name="email" required>
 
-    <label for="message">Your Message</label>
-    <textarea name="message" rows="5" required></textarea>
+    <label for="message">MSG</label>
+    <textarea name="message" rows="3" required></textarea>
 
-    <button type="submit">Send</button>
+    <button type="submit">SEND</button>
   </form>
 </body>
 </html>
